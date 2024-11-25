@@ -1,0 +1,176 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'entry'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=entry",
+                    "--package=entry"
+                ],
+                "filter": {
+                    "name": "entry",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'entry'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=entry",
+                    "--package=entry"
+                ],
+                "filter": {
+                    "name": "entry",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'lib1'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=lib1"
+                ],
+                "filter": {
+                    "name": "lib1",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'lib3'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=lib3"
+                ],
+                "filter": {
+                    "name": "lib3",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'example'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=example",
+                    "--package=lib3"
+                ],
+                "filter": {
+                    "name": "example",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'example'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=example",
+                    "--package=lib3"
+                ],
+                "filter": {
+                    "name": "example",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'lib2'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=lib2"
+                ],
+                "filter": {
+                    "name": "lib2",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'lib4'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=lib4",
+                    "--package=lib4"
+                ],
+                "filter": {
+                    "name": "lib4",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'lib4'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=lib4",
+                    "--package=lib4"
+                ],
+                "filter": {
+                    "name": "lib4",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
